@@ -1,0 +1,1023 @@
+# Product Requirements Document (PRD)
+## Fractional Growth Officer AI System
+### Eighty Six Strategies
+
+---
+
+**Document Version:** 1.0  
+**Last Updated:** January 4, 2026  
+**Author:** James | Eighty Six Strategies  
+**Status:** Draft
+
+---
+
+## Table of Contents
+
+1. [Executive Summary](#executive-summary)
+2. [Problem Statement](#problem-statement)
+3. [Product Vision](#product-vision)
+4. [Target Users](#target-users)
+5. [User Personas](#user-personas)
+6. [Jobs to Be Done](#jobs-to-be-done)
+7. [Product Requirements](#product-requirements)
+8. [Feature Specifications](#feature-specifications)
+9. [User Flows](#user-flows)
+10. [Technical Architecture](#technical-architecture)
+11. [Success Metrics](#success-metrics)
+12. [Risks & Mitigations](#risks--mitigations)
+13. [Roadmap](#roadmap)
+14. [Appendix](#appendix)
+
+---
+
+## Executive Summary
+
+The Fractional Growth Officer (CGO) AI System is an intelligent marketing strategy platform designed to deliver enterprise-grade growth consulting to small businesses at a fraction of traditional costs. Built on proven frameworks and local market expertise, the system combines AI-powered analysis with actionable playbooks to help contractors, trades professionals, and local service businesses scale through digital marketing.
+
+**Core Value Proposition:** Democratize access to strategic growth expertise that was previously only available to businesses with $10K+/month agency retainers.
+
+**Business Model:** Productized service offering that increases Eighty Six Strategies' leverage—serving more clients with consistent quality while reducing per-client time investment.
+
+---
+
+## Problem Statement
+
+### The Small Business Marketing Gap
+
+Small service businesses face a fundamental challenge: they need sophisticated marketing to compete, but lack the budget, time, and expertise to execute it.
+
+**Current State Pain Points:**
+
+| Pain Point | Impact | Frequency |
+|------------|--------|-----------|
+| No strategic direction | Wasted spend on wrong channels | Universal |
+| Information overload | Analysis paralysis, no action | 85% of prospects |
+| Agency costs prohibitive | $3-10K/month minimums | 90% priced out |
+| DIY marketing fails | Poor ROI, frustration | 70% abandon in 6 months |
+| No measurement framework | Can't tell what's working | 80% of small businesses |
+| Generic advice | Doesn't fit their specific situation | Universal with free content |
+
+**Quantified Problem:**
+- 65% of small businesses say finding customers is their #1 challenge (SCORE, 2024)
+- Average small business wastes $14,000/year on ineffective marketing (Infusionsoft)
+- 47% of small businesses handle marketing themselves with no strategy (Clutch)
+- Only 17% of small businesses have a documented marketing plan (CoSchedule)
+
+### Why Existing Solutions Fail
+
+| Solution | Why It Fails for Small Business |
+|----------|--------------------------------|
+| Full-service agencies | Too expensive ($5-15K/month), over-engineered |
+| Freelancers | Tactical only, no strategy, inconsistent quality |
+| DIY courses | Generic, overwhelming, no accountability |
+| Marketing software | Tools without strategy, adds complexity |
+| ChatGPT/generic AI | No framework, no local expertise, hallucinations |
+
+---
+
+## Product Vision
+
+### Vision Statement
+
+> "Every small business owner operates with the strategic clarity of a company 10x their size."
+
+### Mission
+
+Deliver a systematized, AI-augmented growth methodology that transforms how small service businesses approach marketing—from random acts of marketing to strategic, measurable, ROI-focused execution.
+
+### Strategic Positioning
+
+```
+                    HIGH STRATEGIC VALUE
+                           │
+         ┌─────────────────┼─────────────────┐
+         │                 │                 │
+         │   Traditional   │   FRACTIONAL    │
+         │   Agencies      │   CGO SYSTEM    │
+         │   ($$$)         │   ($$)          │
+         │                 │      ★          │
+LOW ─────┼─────────────────┼─────────────────┼───── HIGH
+COST     │                 │                 │      COST
+         │   DIY/Generic   │   Boutique      │
+         │   AI Tools      │   Consultants   │
+         │   ($)           │   ($$$)         │
+         │                 │                 │
+         └─────────────────┼─────────────────┘
+                           │
+                    LOW STRATEGIC VALUE
+```
+
+### Product Principles
+
+1. **Strategy before tactics** — Always diagnose before prescribing
+2. **Simplicity scales** — Complexity is the enemy of execution
+3. **Local-first** — Generic national advice fails local businesses
+4. **Owner-centric** — Respect time constraints, build for delegation
+5. **Measurable outcomes** — If we can't measure it, we don't recommend it
+
+---
+
+## Target Users
+
+### Primary Market
+
+**Geography:** Rhode Island, Southeast Massachusetts, Eastern Connecticut (initial); expandable nationally
+
+**Business Characteristics:**
+- Annual revenue: $250K – $5M
+- Employees: 1-25
+- Monthly marketing budget: $1,500 – $10,000
+- Internal marketing staff: 0-1
+
+**Industry Verticals (Priority Order):**
+
+| Tier | Vertical | Why |
+|------|----------|-----|
+| 1 | Skilled trades (flooring, roofing, HVAC, plumbing, electrical) | High job values, visual work, local SEO gold |
+| 2 | Home services (cleaning, landscaping, junk removal) | Volume business, review-dependent, repeat customers |
+| 3 | Local professionals (attorneys, accountants, real estate) | Higher sophistication, referral-based, content opportunities |
+| 4 | Health & wellness (dentists, chiropractors, med spas) | Recurring revenue, competitive, willing to spend |
+
+### Secondary Market
+
+- Franchisees needing local marketing support
+- Startups in service industries
+- Established businesses entering new markets
+
+### Anti-Personas (Who This Is NOT For)
+
+- E-commerce businesses (different playbook)
+- SaaS companies (B2B tech requires different approach)
+- Businesses under $100K revenue (not ready to invest)
+- Businesses expecting overnight results
+- Those unwilling to participate in their own marketing
+
+---
+
+## User Personas
+
+### Persona 1: "Mike the Master Tradesman"
+
+**Demographics:**
+- Age: 38-55
+- Role: Owner/Operator
+- Business: Established trade business (flooring, HVAC, roofing)
+- Revenue: $750K - $2M
+- Team: 3-8 employees
+
+**Psychographics:**
+- Built business on reputation and referrals
+- Skeptical of marketing ("tried it, didn't work")
+- Values craftsmanship and quality work
+- Time-starved, works IN the business
+- Practical, wants proof before investing
+
+**Current Marketing State:**
+- Has a website (probably outdated)
+- Google Business Profile exists but neglected
+- Gets most leads from referrals and repeat customers
+- Tried Facebook ads once, got burned
+- Knows he needs to "do something" with marketing
+
+**Goals:**
+- Reduce reliance on referrals
+- Fill schedule gaps during slow seasons
+- Hire another crew (needs lead volume to justify)
+- Eventually step back from tools
+
+**Frustrations:**
+- "I don't have time for social media"
+- "Marketing people don't understand my business"
+- "I've wasted money on stuff that didn't work"
+- "I just need the phone to ring"
+
+**Quote:** "I'm great at what I do—I just need people to find me."
+
+---
+
+### Persona 2: "Sarah the Scaling Solopreneur"
+
+**Demographics:**
+- Age: 28-42
+- Role: Solo owner or owner + 1 admin
+- Business: Home service or professional service
+- Revenue: $150K - $500K
+- Team: Just her (maybe part-time help)
+
+**Psychographics:**
+- Ambitious, wants to build something bigger
+- Digitally comfortable but not expert
+- Does her own marketing (out of necessity)
+- Active on social media personally
+- Willing to learn, limited time to execute
+
+**Current Marketing State:**
+- Posts inconsistently on Instagram/Facebook
+- Has a decent website (probably Squarespace/Wix)
+- Responds to reviews but no proactive strategy
+- Tried running her own Google Ads (overwhelmed)
+- Email list exists but rarely used
+
+**Goals:**
+- Create consistent lead flow
+- Build systems she can eventually delegate
+- Establish herself as the go-to in her area
+- Work smarter, not harder
+
+**Frustrations:**
+- "I know I should be doing more, but where do I start?"
+- "I can't afford a real agency"
+- "There's so much conflicting advice online"
+- "I spend hours on social and get nothing from it"
+
+**Quote:** "I just need someone to tell me exactly what to do—step by step."
+
+---
+
+### Persona 3: "Tom the Transitioning Exec"
+
+**Demographics:**
+- Age: 45-60
+- Role: Former corporate, now owns service business
+- Business: Acquired or started post-corporate career
+- Revenue: $500K - $3M
+- Team: 5-15 employees
+
+**Psychographics:**
+- Brings business acumen, lacks trade/local marketing knowledge
+- Used to having teams and resources
+- Analytical, wants data and metrics
+- Impatient with "small business" limitations
+- Willing to invest if ROI is clear
+
+**Current Marketing State:**
+- Hired a "marketing person" who does random tactics
+- Website is corporate-feeling, not conversion-optimized
+- Has budget but unsure how to allocate
+- Running ads but can't tell if they work
+- Frustrated by lack of sophistication in local vendors
+
+**Goals:**
+- Build a scalable marketing engine
+- Professionalize the operation
+- Clear dashboard of marketing performance
+- Eventually exit (5-7 year horizon)
+
+**Frustrations:**
+- "Nobody in this space thinks strategically"
+- "I need a CMO but can't afford one full-time"
+- "My gut says we're wasting money but I can't prove it"
+- "This feels harder than it should be"
+
+**Quote:** "I've scaled businesses before—I just need the right framework for this market."
+
+---
+
+## Jobs to Be Done
+
+### Functional Jobs
+
+| Job | Context | Outcome Desired |
+|-----|---------|-----------------|
+| Figure out where to focus | Limited budget, unlimited options | Clear prioritization framework |
+| Generate more leads | Revenue growth, fill capacity | Consistent, qualified inbound leads |
+| Stop wasting money | Burned by bad marketing before | Confidence that spend drives ROI |
+| Build marketing systems | Can't do everything manually forever | Repeatable processes that scale |
+| Understand what's working | Metrics overwhelm or absence | Simple dashboard, clear attribution |
+| Keep up with competitors | Seeing others "everywhere" online | Competitive parity or advantage |
+| Get found locally | Depending on referrals only | Dominant local search presence |
+
+### Emotional Jobs
+
+| Job | Underlying Need |
+|-----|-----------------|
+| Feel confident about marketing decisions | Reduce anxiety, imposter syndrome |
+| Stop feeling behind | Peers seem to "get" digital marketing |
+| Regain time and mental space | Marketing feels like a weight |
+| Be proud of online presence | Current state is embarrassing |
+| Feel like a "real" business | Professional marketing signals legitimacy |
+
+### Social Jobs
+
+| Job | Who They Want to Impress |
+|-----|-------------------------|
+| Look professional online | Prospective customers |
+| Demonstrate growth/success | Peers, family, employees |
+| Be seen as the go-to | Community, referral sources |
+| Attract better talent | Prospective employees |
+
+---
+
+## Product Requirements
+
+### Functional Requirements
+
+#### FR-1: Strategic Assessment Engine
+- **FR-1.1:** System must diagnose current marketing state across all major channels
+- **FR-1.2:** System must identify gaps using the Growth Hierarchy framework (Foundation → Found → Convert → Nurture → Scale)
+- **FR-1.3:** System must prioritize recommendations by ROI potential and resource requirements
+- **FR-1.4:** Assessment must complete in a single conversation session
+- **FR-1.5:** Output must include specific, actionable next steps (not generic advice)
+
+#### FR-2: Channel-Specific Playbooks
+- **FR-2.1:** Google Business Profile optimization (complete checklist)
+- **FR-2.2:** Local SEO audit and roadmap
+- **FR-2.3:** Website conversion analysis
+- **FR-2.4:** Social media strategy by platform
+- **FR-2.5:** Email/SMS marketing sequences
+- **FR-2.6:** Google Ads setup and optimization
+- **FR-2.7:** Review generation system
+- **FR-2.8:** Content marketing calendar
+
+#### FR-3: Implementation Guidance
+- **FR-3.1:** Step-by-step instructions for each tactic
+- **FR-3.2:** Tool recommendations with free/paid alternatives
+- **FR-3.3:** Time estimates for each task
+- **FR-3.4:** Templates and examples for immediate use
+- **FR-3.5:** Common mistakes to avoid
+
+#### FR-4: Measurement Framework
+- **FR-4.1:** KPI recommendations by business type and channel
+- **FR-4.2:** Tracking setup guidance (GA4, call tracking, etc.)
+- **FR-4.3:** Reporting templates
+- **FR-4.4:** Benchmark data for comparison
+- **FR-4.5:** ROI calculation frameworks
+
+#### FR-5: Roadmap Generation
+- **FR-5.1:** 90-day sprint planning
+- **FR-5.2:** Resource allocation recommendations
+- **FR-5.3:** Milestone definitions
+- **FR-5.4:** Dependency mapping
+- **FR-5.5:** Contingency planning for common obstacles
+
+### Non-Functional Requirements
+
+#### NFR-1: Accuracy
+- Recommendations must be current (validated against latest platform updates)
+- Local market data must be Rhode Island/New England specific where applicable
+- Tool recommendations must be verified as functional and available
+
+#### NFR-2: Usability
+- Language must be jargon-free or include plain-English explanations
+- Instructions must be executable by someone with basic computer skills
+- Response length must be appropriate to query complexity
+
+#### NFR-3: Personalization
+- All recommendations must factor in stated budget constraints
+- Recommendations must account for time/resource availability
+- Industry vertical must influence channel prioritization
+
+#### NFR-4: Consistency
+- Framework application must be consistent across sessions
+- Terminology must remain standardized
+- Quality of output must not degrade over conversation length
+
+#### NFR-5: Safety & Ethics
+- No guarantees of specific results
+- Transparent about limitations
+- Compliant with platform terms of service (Google, Meta, etc.)
+- No black-hat or manipulative tactics recommended
+
+---
+
+## Feature Specifications
+
+### Feature 1: Growth Diagnostic
+
+**Description:** Interactive assessment that evaluates a business's current marketing state and identifies the highest-impact opportunities.
+
+**User Story:** As a small business owner, I want to understand where my marketing is strong/weak so I can focus my limited resources on what matters most.
+
+**Acceptance Criteria:**
+- [ ] Collects business type, revenue range, current marketing activities
+- [ ] Evaluates presence/quality across 7 core channels
+- [ ] Applies Growth Hierarchy framework to prioritize
+- [ ] Outputs prioritized list of opportunities with effort/impact ratings
+- [ ] Completes in under 15 minutes of user interaction
+
+**Inputs Required:**
+```
+- Business name and type
+- Service area (geographic)
+- Current revenue range
+- Marketing budget (monthly)
+- Time available for marketing (hours/week)
+- Current activities (checklist)
+- Primary goal (leads, awareness, retention)
+- Biggest frustration (open text)
+```
+
+**Output Format:**
+```
+## Growth Diagnostic: [Business Name]
+
+### Current State Summary
+[2-3 sentence overview]
+
+### Growth Hierarchy Assessment
+Level 1 - Foundation: [Score/Status]
+Level 2 - Be Found: [Score/Status]
+Level 3 - Convert: [Score/Status]
+Level 4 - Nurture: [Score/Status]
+Level 5 - Scale: [Score/Status]
+
+### Primary Growth Lever
+[The ONE thing to focus on first, with rationale]
+
+### Quick Wins (Next 7 Days)
+1. [Specific action]
+2. [Specific action]
+3. [Specific action]
+
+### 90-Day Roadmap Preview
+[High-level phases]
+
+### Recommended Next Step
+[Single clear CTA]
+```
+
+---
+
+### Feature 2: Channel Optimizer
+
+**Description:** Deep-dive modules for each marketing channel with audit frameworks, optimization checklists, and implementation guides.
+
+**User Story:** As a business owner who knows I need to improve my [channel], I want specific guidance on what to fix and how so I can improve performance without hiring an expert.
+
+**Channels Covered:**
+
+**2.1 Google Business Profile Optimizer**
+- Profile completeness audit (40-point checklist)
+- Category optimization recommendations
+- Photo requirements and best practices
+- Review velocity analysis and improvement plan
+- Google Posts content calendar
+- Q&A seeding strategy
+
+**2.2 Website Conversion Analyzer**
+- Mobile usability assessment
+- Page speed recommendations
+- Conversion element checklist
+- CTA optimization
+- Trust signal inventory
+- Technical SEO basics
+
+**2.3 Local SEO Auditor**
+- Citation consistency check (priority directories)
+- On-page optimization checklist
+- Content gap analysis
+- Local link building opportunities
+- Competitor visibility comparison
+
+**2.4 Social Media Strategist**
+- Platform selection framework
+- Content pillar development
+- Posting schedule recommendations
+- Engagement tactics
+- Paid social readiness assessment
+
+**2.5 Email/SMS Architect**
+- List building strategies
+- Sequence templates (welcome, post-service, re-engagement)
+- Frequency recommendations
+- Compliance checklist
+- Tool selection guide
+
+**2.6 Google Ads Advisor**
+- Readiness assessment (prerequisites before running ads)
+- Campaign structure templates
+- Budget allocation framework
+- Keyword research guidance
+- Landing page requirements
+- Optimization checklist
+
+---
+
+### Feature 3: 90-Day Roadmap Builder
+
+**Description:** Generates a phased implementation plan based on diagnostic results, available resources, and business goals.
+
+**User Story:** As a business owner who's been told what to do but not how to sequence it, I want a clear 90-day plan so I can make progress without getting overwhelmed.
+
+**Acceptance Criteria:**
+- [ ] Accounts for budget constraints
+- [ ] Accounts for time availability
+- [ ] Sequences dependencies correctly (foundation before scaling)
+- [ ] Includes specific weekly/monthly milestones
+- [ ] Identifies decision points and check-ins
+- [ ] Provides resource requirements for each phase
+
+**Output Format:**
+```
+## 90-Day Growth Roadmap: [Business Name]
+
+### Phase 1: Foundation (Days 1-30)
+**Focus:** [Theme]
+**Time Required:** X hours/week
+**Budget Allocation:** $X
+
+Week 1:
+- [ ] Task 1 (X hours)
+- [ ] Task 2 (X hours)
+
+Week 2:
+- [ ] Task 3 (X hours)
+...
+
+**Milestone:** [What success looks like at Day 30]
+
+### Phase 2: Build (Days 31-60)
+[Same structure]
+
+### Phase 3: Accelerate (Days 61-90)
+[Same structure]
+
+### Success Metrics
+| Metric | Baseline | Day 30 Target | Day 90 Target |
+|--------|----------|---------------|---------------|
+
+### Risk Factors & Contingencies
+[Common obstacles and how to handle]
+```
+
+---
+
+### Feature 4: Content Generator
+
+**Description:** Creates ready-to-use marketing content based on business inputs and strategic recommendations.
+
+**User Story:** As a business owner who knows what content I need but doesn't know how to create it, I want draft content I can use immediately so I can execute without hiring a copywriter.
+
+**Content Types:**
+
+| Content Type | Use Case |
+|--------------|----------|
+| Google Business Profile posts | Weekly updates |
+| Social media posts (by platform) | Content calendar execution |
+| Email sequences | Automated nurture flows |
+| Website copy (headlines, CTAs) | Conversion optimization |
+| Review request templates | Review generation system |
+| Ad copy (Google, Facebook) | Paid campaign launch |
+| Blog post outlines | SEO content strategy |
+
+**Personalization Inputs:**
+- Business name and services
+- Tone of voice (professional, friendly, authoritative)
+- Target customer description
+- Key differentiators
+- Common objections
+- Service area
+
+---
+
+### Feature 5: Competitive Intelligence
+
+**Description:** Analyzes local competitive landscape to identify opportunities and threats.
+
+**User Story:** As a business owner, I want to understand what my competitors are doing in marketing so I can identify gaps and opportunities.
+
+**Capabilities:**
+- GBP presence comparison (reviews, posts, photos)
+- Website comparison (basic technical and content analysis)
+- Social media presence overview
+- Local SEO visibility indicators
+- Advertising activity indicators (where visible)
+
+**Output:**
+```
+## Competitive Landscape: [Service] in [Area]
+
+### Your Position
+[Summary of current visibility]
+
+### Top 3 Competitors
+
+**Competitor 1: [Name]**
+- GBP: X reviews, X rating
+- Website: [Quick assessment]
+- Social: [Platforms active]
+- Strengths: [What they do well]
+- Weaknesses: [Gaps you can exploit]
+
+[Repeat for 2-3 competitors]
+
+### Opportunities
+1. [Specific opportunity based on competitive gaps]
+2. [Opportunity]
+3. [Opportunity]
+
+### Threats
+1. [What to watch out for]
+```
+
+---
+
+## User Flows
+
+### Flow 1: New User Assessment
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         START                                    │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  User initiates conversation                                     │
+│  "I need help with marketing for my [business type]"            │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  System asks diagnostic questions                                │
+│  - Business type, service area                                   │
+│  - Current revenue range                                         │
+│  - Marketing budget & time available                             │
+│  - Current marketing activities                                  │
+│  - Primary goal                                                  │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  System generates Growth Diagnostic                              │
+│  - Current state assessment                                      │
+│  - Growth Hierarchy evaluation                                   │
+│  - Primary growth lever identification                           │
+│  - Quick wins                                                    │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  User selects next step                                          │
+│  A) Deep dive on primary lever                                   │
+│  B) Full 90-day roadmap                                          │
+│  C) Specific channel help                                        │
+│  D) Generate content                                             │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+              ┌───────────────┼───────────────┐
+              ▼               ▼               ▼
+         [Channel       [Roadmap        [Content
+         Optimizer]     Builder]        Generator]
+```
+
+### Flow 2: Returning User Check-In
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  User returns for progress check                                 │
+│  "I've completed [tasks]. What's next?"                         │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  System references previous roadmap                              │
+│  - Confirms completed tasks                                      │
+│  - Asks about results/metrics observed                          │
+│  - Identifies blockers                                           │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  System provides updated guidance                                │
+│  - Next phase tasks                                              │
+│  - Adjustments based on results                                  │
+│  - New opportunities identified                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Flow 3: Specific Problem Solving
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  User asks specific question                                     │
+│  "How do I run Google Ads for my plumbing business?"            │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│  System assesses readiness                                       │
+│  - Is this the right tactic for their stage?                    │
+│  - Are prerequisites in place?                                   │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+              ┌───────────────┴───────────────┐
+              ▼                               ▼
+┌─────────────────────────┐     ┌─────────────────────────┐
+│  Ready: Provide playbook │     │  Not ready: Explain why │
+│  - Step-by-step guide    │     │  - What to do first     │
+│  - Budget recommendations│     │  - How to get ready     │
+│  - Common mistakes       │     │  - Timeline estimate    │
+└─────────────────────────┘     └─────────────────────────┘
+```
+
+---
+
+## Technical Architecture
+
+### System Components
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     USER INTERFACE LAYER                         │
+├─────────────────────────────────────────────────────────────────┤
+│  • Claude.ai chat interface (current)                           │
+│  • Future: Custom web application                                │
+│  • Future: API for integrations                                  │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                      AI ENGINE LAYER                             │
+├─────────────────────────────────────────────────────────────────┤
+│  • Claude (Anthropic) - Primary reasoning engine                │
+│  • System prompt: Fractional CGO persona & frameworks           │
+│  • Context management: Conversation history                      │
+│  • Output formatting: Structured templates                       │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     KNOWLEDGE LAYER                              │
+├─────────────────────────────────────────────────────────────────┤
+│  • Channel playbooks (GBP, SEO, Social, Email, Ads, Web)        │
+│  • Industry templates (trades, home services, professional)     │
+│  • Local market data (Rhode Island/New England focus)           │
+│  • Benchmark data (KPIs, conversion rates, costs)               │
+│  • Tool database (recommendations, pricing, alternatives)       │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     INTEGRATION LAYER                            │
+├─────────────────────────────────────────────────────────────────┤
+│  Current: None (manual execution)                                │
+│  Future:                                                         │
+│  • Notion (client records, roadmap tracking)                    │
+│  • Google APIs (GBP analysis, Analytics data)                   │
+│  • SEO tools (Semrush/Ahrefs for competitive analysis)          │
+│  • Social APIs (for performance data)                           │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Data Flow
+
+```
+User Input → System Prompt Processing → Framework Application → 
+Knowledge Retrieval → Response Generation → Formatted Output
+```
+
+### Technology Stack (Current State)
+
+| Component | Technology | Notes |
+|-----------|------------|-------|
+| AI Engine | Claude (Anthropic) | Via Claude.ai or API |
+| Interface | Claude.ai chat | Custom UI future state |
+| Knowledge Base | System prompt + conversation | RAG future state |
+| Integrations | Manual | API integrations future |
+| Client Data | None stored | Notion integration future |
+
+### Technology Stack (Future State)
+
+| Component | Technology | Notes |
+|-----------|------------|-------|
+| AI Engine | Claude API | Direct API access |
+| Interface | Next.js application | Custom branded UI |
+| Knowledge Base | Vector DB (Pinecone) | RAG for playbooks |
+| Integrations | APIs | Google, Meta, Notion |
+| Client Data | Supabase | CRM + tracking |
+| Hosting | Vercel | Serverless deployment |
+
+---
+
+## Success Metrics
+
+### Business Metrics
+
+| Metric | Definition | Target (Year 1) |
+|--------|------------|-----------------|
+| Clients Served | Unique businesses using system | 50+ |
+| Revenue | Direct revenue from productized service | $100,000+ |
+| Client Retention | Clients using system 3+ months | 60%+ |
+| Referral Rate | Clients who refer others | 25%+ |
+| Time Leverage | Avg hours saved per client vs. manual | 10+ hours |
+
+### Product Metrics
+
+| Metric | Definition | Target |
+|--------|------------|--------|
+| Completion Rate | Users completing full diagnostic | 80%+ |
+| Activation Rate | Users implementing first recommendation | 60%+ |
+| Return Usage | Users returning within 30 days | 50%+ |
+| Feature Usage | Avg features used per client | 3+ |
+| NPS | Net Promoter Score | 50+ |
+
+### Client Outcome Metrics
+
+| Metric | Definition | Target |
+|--------|------------|--------|
+| Lead Increase | Change in monthly lead volume | +30% avg |
+| GBP Ranking | Local pack visibility improvement | 2+ position improvement |
+| Review Velocity | Monthly new reviews | 2x baseline |
+| Website Conversion | Visitor-to-lead conversion rate | +1% absolute improvement |
+| Marketing ROI | Revenue per marketing dollar | 5:1+ |
+
+### Tracking Implementation
+
+**Phase 1 (Current):**
+- Manual client tracking in Notion
+- Quarterly client surveys
+- Case study development
+
+**Phase 2 (Future):**
+- In-app analytics
+- Automated outcome tracking via integrations
+- A/B testing on recommendations
+
+---
+
+## Risks & Mitigations
+
+### Product Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| Recommendations become outdated | High | High | Quarterly playbook audits, platform update monitoring |
+| Generic advice doesn't fit specific situations | Medium | High | Deeper diagnostic questions, more vertical-specific modules |
+| Users don't implement recommendations | High | Medium | Better prioritization, simpler first steps, accountability features |
+| Competitive AI tools emerge | High | Medium | Focus on local expertise and proven frameworks |
+| Claude capabilities change | Low | High | Modular prompt design, platform monitoring |
+
+### Business Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| Market too small (local focus) | Medium | Medium | Expand geographic scope, license to other agencies |
+| Cannibalization of services | Low | Medium | Position as entry point to full service |
+| Client results vary widely | Medium | Medium | Clear expectation setting, case studies with context |
+| Support burden exceeds capacity | Medium | Medium | Self-serve improvements, tiered offering |
+
+### Technical Risks
+
+| Risk | Likelihood | Impact | Mitigation |
+|------|------------|--------|------------|
+| AI hallucinations in recommendations | Medium | High | Constrained outputs, human review, feedback loops |
+| API costs exceed projections | Low | Medium | Usage monitoring, caching, efficient prompting |
+| Integration reliability | Medium | Medium | Graceful degradation, manual fallbacks |
+
+---
+
+## Roadmap
+
+### Phase 0: Foundation (Current - Q1 2026)
+**Status:** In Progress
+
+**Deliverables:**
+- [x] Core system prompt development
+- [x] Growth Hierarchy framework
+- [x] Channel playbooks (initial versions)
+- [ ] PRD documentation
+- [ ] 10 beta clients for validation
+- [ ] Case study development (3 minimum)
+
+**Success Criteria:**
+- 80% of beta users complete diagnostic
+- 60% implement at least one recommendation
+- 3 documented success stories
+
+---
+
+### Phase 1: Productization (Q2 2026)
+**Goal:** Package system into sellable offering
+
+**Deliverables:**
+- Refined prompt based on beta feedback
+- Service packaging (tiers, pricing)
+- Sales materials (landing page, case studies)
+- Onboarding process documentation
+- Notion client management system
+
+**Milestones:**
+| Week | Deliverable |
+|------|-------------|
+| 1-2 | Beta feedback synthesis |
+| 3-4 | Prompt refinement |
+| 5-6 | Service packaging |
+| 7-8 | Sales materials |
+| 9-10 | Onboarding documentation |
+| 11-12 | Launch preparation |
+
+**Success Criteria:**
+- 10 paying clients acquired
+- $5,000 MRR achieved
+- NPS 50+
+
+---
+
+### Phase 2: Enhancement (Q3 2026)
+**Goal:** Deepen capabilities and improve outcomes
+
+**Deliverables:**
+- Vertical-specific modules (trades, home services, professional services)
+- Competitive analysis feature
+- Content generation templates
+- Integration with Notion for client tracking
+- Automated check-in sequences
+
+**Success Criteria:**
+- 25 active clients
+- $12,000 MRR
+- Measurable client outcomes documented
+
+---
+
+### Phase 3: Platform (Q4 2026)
+**Goal:** Build standalone application
+
+**Deliverables:**
+- Custom web application (MVP)
+- User accounts and history
+- Dashboard with progress tracking
+- Basic integrations (Google Analytics, GBP)
+- API foundation
+
+**Success Criteria:**
+- Application in production
+- 50% of clients using platform
+- Reduced per-client support time by 50%
+
+---
+
+### Phase 4: Scale (2027+)
+**Goal:** Expand reach and capabilities
+
+**Deliverables:**
+- Geographic expansion playbooks
+- Agency licensing model
+- Advanced integrations (full Google suite, Meta, CRM)
+- AI-generated reports
+- Mobile application
+
+**Success Criteria:**
+- 100+ active clients
+- $50,000+ MRR
+- Agency licensing revenue stream
+
+---
+
+## Appendix
+
+### A. Glossary
+
+| Term | Definition |
+|------|------------|
+| GBP | Google Business Profile (formerly Google My Business) |
+| NAP | Name, Address, Phone - consistency critical for local SEO |
+| LSA | Local Services Ads - Google's pay-per-lead ad format |
+| CAC | Customer Acquisition Cost |
+| ROAS | Return on Ad Spend |
+| MRR | Monthly Recurring Revenue |
+| CGO | Chief Growth Officer |
+
+### B. Competitive Landscape
+
+| Competitor | Type | Strength | Weakness |
+|------------|------|----------|----------|
+| Scorpion | Full-service agency | Scale, tech | Expensive, generic |
+| Thryv | SaaS platform | All-in-one | Complex, no strategy |
+| Main Street ROI | Training/consulting | Education | No execution support |
+| Local agencies | Service providers | Hands-on | Expensive, variable quality |
+| Generic AI (ChatGPT) | Tool | Accessible | No framework, generic |
+
+### C. Pricing Research
+
+| Service Type | Market Rate | Our Position |
+|--------------|-------------|--------------|
+| Full-service agency | $5,000-15,000/mo | Below |
+| Marketing consultant | $150-300/hour | Comparable value, lower cost |
+| DIY courses | $500-2,000 one-time | Above (ongoing support) |
+| Marketing SaaS | $100-500/mo | Above (strategy + tools) |
+
+**Proposed Pricing Tiers:**
+- Starter: $500/month (diagnostic + monthly check-in)
+- Growth: $1,500/month (full system access + implementation support)
+- Scale: $3,000/month (system + done-with-you execution)
+
+### D. Reference Documents
+
+- System Prompt: [Link to full prompt document]
+- Channel Playbooks: [Links to individual playbooks]
+- Client Intake Form: [Link]
+- Case Study Template: [Link]
+
+---
+
+## Document History
+
+| Version | Date | Author | Changes |
+|---------|------|--------|---------|
+| 1.0 | Jan 4, 2026 | James | Initial draft |
+
+---
+
+*This document is a living artifact and should be updated as the product evolves.*
